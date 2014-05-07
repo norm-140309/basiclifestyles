@@ -1,0 +1,103 @@
+body {
+    background:#fff url(../images/darktire-ddd.png);
+}
+.panel{ background:#F4F4F4; }
+.first-panel{ margin-top:65px; }
+.panel-body{ background:#EFEFEF; }
+.panel-dark {
+    border-color: #ddd;
+}
+.panel-dark > .panel-heading {
+    background-color: #0a4402;
+    border-color: #ddd;
+    color: #ddd;
+}
+.panel-default {
+    border-color: #ddd;
+}
+.panel-default > .panel-heading {
+    background-color: #ddd;
+    border-color: #ccc;
+    color: #444;
+}
+.btn-dark {
+    background-color: #0F6204;
+    border-color: #CCCCCC;
+    color: #ddd;
+}
+.btn-dark:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background-color: #108D00;
+    border-color: #ADADAD;
+    color: #ddd;
+}
+.panel-heading .accordion-toggle:before {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    color: #fff;         /* adjust as needed */
+    display: inline;
+    float:right;
+    padding:15px 0px 0 0;/**/
+}
+.panel-heading .accordion-toggle.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    color: #fff;
+    display: inline;
+    float:right;
+    padding:15px 0px 0 0;/**/
+}
+.accordion-toggle, .accordion-toggle:hover { color:#333 !important; text-decoration:none; }
+/*.panel-heading .media-body{ display:table-cell; vertical-alignment:middle; width:100% !important; }*/
+.more_btn{ padding-top:20px; }
+.details-date { margin-bottom:10px; }
+.details-container { padding:0 10px 30px 10px; }
+.date{
+    float: left;
+    height: 52px;
+    width: 52px;
+    background: url(../images/date.png) no-repeat;
+    margin-right: 10px;
+    padding-top: 0px;
+    line-height: normal;
+}
+.date .month{
+    display: block;
+    text-align: center;
+    color: #FFF;
+    font-size: 11px;
+    padding-top: 4px;
+    text-transform: uppercase;
+}
+.date .day{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+}
+.accordion-title{
+	display:table-cell;
+    height:50px;
+    vertical-align:middle;
+}
+.breadcrumb a{ color:#222; }
+.breadcrumb > li + li:before { color:#222; }
+.breadcrumb li a{ text-transform:capitalize; }
+.hidden { display:none; }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

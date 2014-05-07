@@ -1,0 +1,13 @@
+DirectoryIndex index.php 
+
+RewriteCond %{HTTP_HOST} ^basiclifestyles.com
+RewriteRule (.*) http://www.basiclifestyles.com/$1 [R=301,L] 
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*)$ http://www.basiclifestyles.com/index.html?u=&c=$1 [L]
+
+
